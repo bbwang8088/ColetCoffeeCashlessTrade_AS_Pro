@@ -28,10 +28,6 @@
     "chmod +x gradlew"
   ],
   "script": "./gradlew assembleDebug assembleRelease --stacktrace",
-  "before_install": [
-    "openssl aes-256-cbc -K $aes_256_cbc_encrypt_key -iv $aes_256_cbc_encrypt_iv -in secrets.tar.enc -out secrets.tar -d",
-    "tar xvf secrets.tar"
-  ],
   "group": "stable",
   "dist": "precise",
   "os": "linux"
