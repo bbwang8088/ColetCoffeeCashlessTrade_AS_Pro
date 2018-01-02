@@ -30,7 +30,7 @@
     "deploy":{
       "provider": "releases",
       "api_key":{
-        "secure": "8f8863301c8c8626dc82a38cd33d3e76b2f43c29"
+        "secure": "b7ca4d46c6de58d35242f24896333eb5590af3d3"
         },
       "file": "app/build/outputs/apk/app-release.apk",
       "skip_cleanup": "true",
