@@ -27,21 +27,20 @@
   "before_script": [
     "chmod +x gradlew"
   ],
+    "deploy":{
+      "provider": "releases",
+      "api_key":[
+        "secure": "8f8863301c8c8626dc82a38cd33d3e76b2f43c29"
+        ],
+      "file": "app/build/outputs/apk/app-release.apk",
+      "skip_cleanup": "true",
+      "on":[
+        "tags": "true",
+        "all_branches": "true"
+        ]
+  },
   "script": "./gradlew assembleDebug assembleRelease --stacktrace",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
-
-  "deploy":{
-    "provider": "releases",
-    "api_key":[
-      "secure": "8f8863301c8c8626dc82a38cd33d3e76b2f43c29"
-      ],
-    "file": "app/build/outputs/apk/app-release.apk",
-    "skip_cleanup": "true",
-    "on":[
-      "tags": "true",
-      "all_branches": "true"
-      ]
-}
 }
