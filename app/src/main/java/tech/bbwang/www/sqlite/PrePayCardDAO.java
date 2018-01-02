@@ -74,7 +74,7 @@ public class PrePayCardDAO implements IDAO {
 	/**
 	 * 保存一条储值卡信息
 	 * 
-	 * @param d
+	 * @param data
 	 * @return
 	 */
 	@Override
