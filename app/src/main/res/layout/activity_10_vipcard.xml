@@ -1,0 +1,452 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/father"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/bk_background"
+    android:orientation="vertical"
+    tools:context=".Activity_10_vipcard" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="16px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_list"
+        android:layout_width="854px"
+        android:layout_height="300px" >
+
+        <ImageView
+            android:id="@+id/card1_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_marginLeft="54px"
+            android:layout_marginTop="30px"
+            android:src="@drawable/vip2" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/card1_image"
+            android:layout_alignTop="@+id/card1_image"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card1_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card1_image"
+            android:layout_alignLeft="@+id/card1_image"
+            android:layout_marginBottom="7px"
+            android:layout_marginLeft="10px"
+            android:text="@string/rmb50"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/card2_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/card1_image"
+            android:src="@drawable/vip2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card1_title"
+            android:layout_alignLeft="@+id/card2_image"
+            android:layout_alignTop="@+id/card2_image"
+            android:layout_marginLeft="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card2_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card2_image"
+            android:layout_alignLeft="@+id/card2_image"
+            android:layout_marginBottom="7px"
+            android:layout_marginLeft="10px"
+            android:text="@string/rmb100"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/card3_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/card2_image"
+            android:src="@drawable/vip2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card2_title"
+            android:layout_alignBottom="@+id/card2_title"
+            android:layout_alignLeft="@+id/card3_image"
+            android:layout_marginLeft="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card3_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card2_listprice"
+            android:layout_alignBottom="@+id/card2_listprice"
+            android:layout_alignLeft="@+id/card3_image"
+            android:layout_marginLeft="10px"
+            android:text="@string/rmb200"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/card4_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_below="@+id/card1_image"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/card2_image"
+            android:src="@drawable/vip2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/card4_image"
+            android:layout_alignTop="@+id/card4_image"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card4_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card4_image"
+            android:layout_alignLeft="@+id/card4_image"
+            android:layout_marginBottom="7px"
+            android:layout_marginLeft="5px"
+            android:text="@string/rmb300"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/card5_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_below="@+id/card2_image"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/card3_image"
+            android:src="@drawable/vip2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card5_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/card5_image"
+            android:layout_alignTop="@+id/card5_image"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card5_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card5_image"
+            android:layout_alignLeft="@+id/card5_image"
+            android:layout_marginBottom="7px"
+            android:layout_marginLeft="5px"
+            android:text="@string/rmb500"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/card6_image"
+            android:layout_width="200px"
+            android:layout_height="120px"
+            android:layout_below="@+id/card3_image"
+            android:layout_marginLeft="75px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/card2_image"
+            android:src="@drawable/vip2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card6_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/card6_image"
+            android:layout_alignTop="@+id/card6_image"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px"
+            android:text="@string/vip"
+            android:textColor="@drawable/white"
+            android:textSize="15px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card6_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/card6_image"
+            android:layout_alignLeft="@+id/card6_image"
+            android:layout_marginBottom="7px"
+            android:layout_marginLeft="5px"
+            android:text="@string/rmb1000"
+            android:textColor="@color/white"
+            android:textSize="46px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card1_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card1_title"
+            android:layout_alignBottom="@+id/card1_title"
+            android:layout_alignRight="@+id/card1_image"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥25"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card1_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card1_image"
+           android:layout_above="@+id/card1_listprice"
+            android:layout_marginRight="5px"
+            android:text="会员价:¥48"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card2_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card2_title"
+            android:layout_alignRight="@+id/card2_image"
+            android:layout_alignTop="@+id/card2_title"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥50"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card2_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card2_image"
+            android:layout_above="@+id/card2_listprice"
+            android:layout_marginRight="5px"
+            android:text="会员价:¥88"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card3_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/card3_title"
+            android:layout_alignRight="@+id/card3_image"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥168"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card4_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/card4_title"
+            android:layout_alignRight="@+id/card4_image"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥238"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card5_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/card5_title"
+            android:layout_alignBottom="@+id/card4_vipprice"
+            android:layout_alignRight="@+id/card5_image"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥418"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card5_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card5_image"
+            android:layout_above="@+id/card5_listprice"
+            android:layout_marginRight="5px"
+            android:text="会员价:¥168"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card6_freshprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/card6_title"
+            android:layout_alignRight="@+id/card6_image"
+            android:layout_marginRight="5px"
+            android:text="新手价:¥888"
+            android:textColor="@drawable/yellow"
+            android:textSize="18px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card4_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/card4_image"
+            android:layout_above="@+id/card4_listprice"
+            android:layout_marginRight="5px"
+            android:text="会员价:¥168"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold" 
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/card6_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card6_image"
+            android:layout_above="@+id/card6_listprice"
+            android:layout_marginRight="5px"
+            android:text="会员价:¥168"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/card3_vipprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card3_image"
+           android:layout_above="@+id/card3_listprice"
+           android:layout_marginRight="5px"
+            android:text="会员价:¥168"
+            android:textColor="@drawable/white"
+            android:textSize="18px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cancel_trade_for_card"
+        android:layout_width="854px"
+        android:layout_height="70px"
+        android:layout_marginTop="70px"
+        android:background="@drawable/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/button_cancel_trade_for_card"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/back"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

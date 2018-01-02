@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout0001_pay"
+    android:layout_width="540px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/good_detail_item_layout_sharp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_vipcard_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView_inputNumber_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="请输入手机号或会员卡号:"
+            android:textColor="@color/colorBlackText"
+            android:textSize="18px" />
+
+        <EditText
+            android:id="@+id/inputNumber_pay"
+            android:layout_width="450px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="10px"
+            android:ems="11"
+            android:hint="请输入6位数字会员卡号或11位数字手机号"
+            android:maxEms="11"
+            android:maxLength="11"
+            android:textSize="18px" 
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:id="@+id/layout_confirmCode_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_confirmCode_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="请输入验证码:"
+                android:textColor="@color/colorBlackText"
+                android:textSize="18px"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_confirmCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonOK_pay"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="确定"
+                android:textSize="18px" />
+
+            <Button
+                android:id="@+id/buttonCancel_pay"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="取消"
+                android:textSize="18px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

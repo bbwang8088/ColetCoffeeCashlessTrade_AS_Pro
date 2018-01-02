@@ -1,0 +1,719 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminActivity" >
+
+    <!-- 回退到欢迎画面按钮 -->
+
+    <TextView
+        android:id="@+id/card1_listprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:text="@string/factory_mode"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="10px"
+            android:text="@string/backtomain" />
+
+        <Button
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:text="@string/active" />
+
+        <Button
+            android:id="@+id/setHeartBeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:text="@string/setHeartBeat" />
+
+<!--         <Button -->
+<!--             android:id="@+id/watchSerialData" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10px" -->
+<!--             android:layout_marginTop="10px" -->
+<!--             android:text="@string/watchSerialData" /> -->
+
+        <Button
+            android:id="@+id/exitApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:text="@string/exit_app" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 本机UUID显示区域 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelMacUUID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/label_uuid"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block"
+                    android:layout_width="20px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textMacUUID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 激活状态 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelActiveStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/active_status"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block21"
+                    android:layout_width="20px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textActiveStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 运营商编号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelFranchise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/label_franchise"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block123"
+                    android:layout_width="20px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textFranchise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 本机程序版本显示区域 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/app_version"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block10"
+                    android:layout_width="5px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textlabelAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 本机心跳时间 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelHeartBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/heartbeat_time"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block101"
+                    android:layout_width="5px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textHeartBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 数据服务器地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelApiServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/server_url"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block102"
+                    android:layout_width="5px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textApiServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 支付宝服务器地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelalipayServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/alipay_url"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block103"
+                    android:layout_width="5px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textalipayServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <!-- 微信服务器地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder" >
+
+                <TextView
+                    android:id="@+id/labelWechatpayServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/wechatpay_url"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/null_block1033"
+                    android:layout_width="5px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textWechatpayServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+<!--             广告版本信息显示框 -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginBottom="5px" -->
+<!--                 android:layout_marginLeft="5px" -->
+<!--                 android:layout_marginRight="5px" -->
+<!--                 android:layout_marginTop="5px" -->
+<!--                 android:background="@drawable/layoutliner_broder" -->
+<!--                 android:baselineAligned="false" -->
+<!--                 android:orientation="vertical" > -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0px" -->
+<!--                     android:layout_marginBottom="10px" -->
+<!--                     android:layout_marginLeft="5px" -->
+<!--                     android:layout_marginTop="10px" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:baselineAligned="false" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelLocalADVersion" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_version" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block2" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textLocalADVersion" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelLocalADName" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_name" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block3" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textLocalADName" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+<!--                 </LinearLayout> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0px" -->
+<!--                     android:layout_marginBottom="10px" -->
+<!--                     android:layout_marginLeft="5px" -->
+<!--                     android:layout_marginTop="10px" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:baselineAligned="false" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelLocalADNUmer" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_number" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block6" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textLocalADNumer" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelLocalADVersionUpdateTime" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_update_time" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block31" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textLocalADVersionUpdateTime" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+<!--                 </LinearLayout> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="0px" -->
+<!--                     android:layout_marginBottom="10px" -->
+<!--                     android:layout_marginLeft="5px" -->
+<!--                     android:layout_marginTop="10px" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:baselineAligned="false" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelADSwitchTime" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_switch_time" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block12" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textADSwitchTime" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+
+<!--                     <LinearLayout -->
+<!--                         android:layout_width="0px" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_weight="1.0" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/labelADSwitchEffect" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:text="@string/current_ad_switch_effect" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/null_block3333" -->
+<!--                             android:layout_width="5px" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textADSwitchEffect" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+<!--                     </LinearLayout> -->
+<!--                 </LinearLayout> -->
+<!--             </LinearLayout> -->
+
+            <!-- 菜单版本信息显示框 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/layoutliner_broder"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="5px"
+                    android:layout_marginTop="5px"
+                    android:baselineAligned="false" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginTop="10px"
+                        android:layout_weight="1.0" >
+
+                        <TextView
+                            android:id="@+id/labelLocalMemuVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_menu_version"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/null_block4"
+                            android:layout_width="5px"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/textLocalMenuVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginTop="10px"
+                        android:layout_weight="1.0" >
+
+                        <TextView
+                            android:id="@+id/labelLocalMemuName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_menu_name"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/null_block5"
+                            android:layout_width="5px"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/textLocalMemuName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1.0"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1.0" >
+
+                        <TextView
+                            android:id="@+id/labelLocalMenuNUmer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_menu_number"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/null_block7"
+                            android:layout_width="5px"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/textLocalMenuNumer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" >
+
+                        <TextView
+                            android:id="@+id/labelLocalMemuVersionUpdateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_ad_update_time"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/null_block51"
+                            android:layout_width="5px"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/textLocalMemuVersionUpdateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

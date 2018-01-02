@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/bk_background"
+    android:orientation="vertical"
+    tools:context=".Activity_02_Welcome" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="16px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coffe_machine_init_status"
+        android:layout_width="match_parent"
+        android:layout_height="388px"
+        android:layout_marginBottom="20px"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/msg_connect"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/white"
+        android:textSize="40px" />
+
+</LinearLayout>

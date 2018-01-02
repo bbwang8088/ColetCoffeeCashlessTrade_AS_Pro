@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/logo3"
+    android:orientation="vertical"
+    tools:context=".Activity_02_Welcome" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"  >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coffee_make_progress_image"
+        android:layout_width="250px"
+        android:layout_height="220px"
+        android:layout_marginTop="25px"
+        android:layout_gravity="center"
+        android:background="@drawable/cup0" />
+
+    <TextView
+        android:id="@+id/message_coffeemake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px"
+        android:text="@string/message_coffeemakeing"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/white"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:text="注意：请放置杯子"
+        android:textColor="@drawable/yellow"
+        android:textSize="40px" />
+
+    <!-- <Button -->
+    <!-- android:id="@+id/test_back" -->
+    <!-- android:layout_width="140px" -->
+    <!-- android:layout_height="55px" -->
+    <!-- android:layout_marginLeft="50px" -->
+    <!-- android:background="@drawable/btn_sharp" -->
+    <!-- android:text="返回" -->
+    <!-- android:textColor="#fff" -->
+    <!-- android:textSize="30px" -->
+    <!-- android:visibility="gone" /> -->
+
+</LinearLayout>

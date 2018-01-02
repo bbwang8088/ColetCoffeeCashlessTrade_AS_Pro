@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/logo2"
+    android:orientation="vertical"
+    tools:context=".Activity_02_Welcome" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"  >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="63px"
+        android:layout_marginTop="10px" 
+        android:baselineAligned="false"
+        android:id="@+id/firstLine" >
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/button_mskf"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/bt3_selector"
+            android:scaleType="centerInside"
+            app:label_backgroundColor="#FF0000"
+            app:label_distance="30px"
+            app:label_height="40px"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="8.99元"
+            app:label_textSize="30px"
+            app:label_textColor="#000000"/>
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/button_kbjn"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/bt4_selector"
+            android:scaleType="centerInside"
+            app:label_backgroundColor="#FF0000"
+            app:label_distance="30px"
+            app:label_height="40px"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="9.99元"
+            app:label_textSize="30px"
+            app:label_textColor="#000000" />
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/button_nt"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/bt5_selector"
+            android:scaleType="centerInside"
+            app:label_backgroundColor="#FF0000"
+            app:label_distance="30px"
+            app:label_height="40px"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="10.99元"
+            app:label_textSize="30px"
+            app:label_textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="63px"
+        android:layout_marginTop="20px" 
+        android:baselineAligned="false"
+        android:id="@+id/secondLine"  >
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/button_nm"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/bt1_selector"
+            android:scaleType="centerInside"
+            app:label_backgroundColor="#FF0000"
+            app:label_distance="30px"
+            app:label_height="40px"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="0.01元"
+            app:label_textSize="30px" 
+            app:label_textColor="#000000"/>
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/button_hot_milk"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/bt2_selector"
+            android:scaleType="centerInside"
+            app:label_backgroundColor="#FF0000"
+            app:label_distance="30px"
+            app:label_height="40px"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="5.99元"
+            app:label_textSize="30px"
+            app:label_textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/button_zqx"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/bt6_selector"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</LinearLayout>

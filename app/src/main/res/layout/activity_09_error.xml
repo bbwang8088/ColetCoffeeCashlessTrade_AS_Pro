@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/logo3"
+    android:orientation="vertical"
+    tools:context=".Activity_02_Welcome" >
+
+<LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/error_image"
+        android:layout_width="215px"
+        android:layout_height="215px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:src="@drawable/error1" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56px"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/message_macerror"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/white"
+        android:textSize="40px" />
+
+</LinearLayout>

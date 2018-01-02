@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout0001"
+    android:layout_width="540px"
+    android:layout_height="300px"
+    android:background="@drawable/good_detail_item_layout_sharp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_marginBottom="5px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="15px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup_CardConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/RadioButton_haveCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="我有会员卡"
+                android:textColor="@drawable/black"
+                android:textSize="18px" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_notHaveCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="我还没有会员卡"
+                android:textColor="@drawable/black"
+                android:textSize="18px" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20px"
+        android:background="@color/good_detail_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_vipcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView_inputNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="请输入手机号或会员卡号:"
+            android:textColor="@color/colorBlackText"
+            android:textSize="18px" />
+
+        <EditText
+            android:id="@+id/inputNumber"
+            android:layout_width="450px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="10px"
+            android:ems="11"
+            android:hint="请输入6位数字会员卡号或11位数字手机号"
+            android:maxEms="11"
+            android:maxLength="11"
+            android:textSize="18px" />
+
+        <LinearLayout
+            android:id="@+id/layout_confirmCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_confirmCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="请输入验证码:"
+                android:textColor="@color/colorBlackText"
+                android:textSize="18px"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_confirmCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/confirmCode"
+                    android:layout_width="295px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:digits="0123456789"
+                    android:ems="4"
+                    android:hint="请输入4位数字手机验证码"
+                    android:inputType="number"
+                    android:maxEms="4"
+                    android:maxLength="4"
+                    android:numeric="integer"
+                    android:textSize="18px"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/send_ConfirmCode"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/editText1"
+                    android:layout_marginLeft="5px"
+                    android:text="发送验证码"
+                    android:textSize="18px"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_confirmCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonOK"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="确定"
+                android:textSize="18px" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="取消"
+                android:textSize="18px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

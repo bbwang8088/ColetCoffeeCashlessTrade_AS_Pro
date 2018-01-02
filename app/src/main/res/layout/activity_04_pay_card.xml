@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="854px"
+    android:layout_height="480px"
+    android:background="@drawable/logo2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="854px"
+        android:layout_height="40px"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60px"
+            android:layout_height="30px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="10px"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/terminal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="550px"
+            android:text="@string/test_terminal_id"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="854px"
+        android:layout_height="335px"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="427px"
+            android:layout_height="300px"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cardAppendMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="充值金额："
+                android:textColor="@color/colorWhiteText"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/cardRealPayMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="5px"
+                android:text="实付金额："
+                android:textColor="@color/colorWhiteText"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/cardPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="25px"
+                android:text="手机："
+                android:textColor="@color/colorWhiteText"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/cardRemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="5px"
+                android:text="余额："
+                android:textColor="@color/colorWhiteText"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="427px"
+            android:layout_height="300px"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/label_switch_pay_method"
+                android:layout_width="427px"
+                android:layout_height="30px"
+                android:gravity="center|center_vertical"
+                android:text="请选择支付方式"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="25px" />
+
+            <com.kanyuan.circleloader.CircleLoader
+                android:id="@+id/circleloader1"
+                android:layout_width="275px"
+                android:layout_height="275px"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="275px"
+                android:layout_height="275px"
+                android:layout_gravity="center"
+                android:background="@drawable/qrcode_creating"
+                android:contentDescription="@string/logo"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="854px"
+        android:layout_height="105px"
+        android:background="@drawable/white"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ly_cancel_trade"
+            android:layout_width="127px"
+            android:layout_height="105px"
+            android:background="@drawable/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/button_cancel_trade"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/back"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_alipay_trade"
+            android:layout_width="300px"
+            android:layout_height="105px"
+            android:background="@drawable/white"
+            android:baselineAligned="false"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/alipay_trade"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/alipay_300x300"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_wechatpay_trade"
+            android:layout_width="300px"
+            android:layout_height="105px"
+            android:background="@drawable/white"
+            android:baselineAligned="false"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/wechatpay_trade"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/wechat_300x300"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127px"
+            android:layout_height="105px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/white"
+            android:baselineAligned="false"
+            android:gravity="center|center_vertical|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pay_left_time"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="60"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackText"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
