@@ -30,11 +30,12 @@
     "deploy":{
       "provider": "releases",
       "api_key":{
-        "secure": "b7ca4d46c6de58d35242f24896333eb5590af3d3"
+        "secure": GITHUB_TOKEN
         },
       "file": "app/build/outputs/apk/app-release.apk",
       "skip_cleanup": "true",
       "on":{
+        "repo": "bbwang8088/ColetCoffeeCashlessTrade_AS_Pro",
         "tags": "true",
         "all_branches": "true"
         }
