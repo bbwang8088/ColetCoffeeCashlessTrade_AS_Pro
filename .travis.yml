@@ -27,7 +27,7 @@
   "before_script": [
     "chmod +x gradlew"
   ],
-  before_deploy:{
+  "before_deploy":{
     "mv app/build/outputs/apk/app-release.apk app/build/outputs/apk/ColetCoffeeCashlessTrade_AS_Pro.apk"
     },
   "deploy":{
