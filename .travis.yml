@@ -13,23 +13,20 @@
       "extra-android-support"
     ]
   },
-#  "before_cache": [
-#    "rm -f $HOME/.gradle/caches/modules-2/modules-2.lock"
-#  ],
-#  "cache": {
-#    "directories": [
-#      "$HOME/.m2",
-#      "$HOME/.gradle",
-#      "$HOME/.gradle/caches/",
-#      "$HOME/.gradle/wrapper/"
-#    ]
-#  },
-#  "before_script": [
-#    "chmod +x gradlew"
-#  ],
- "script":{
-    " ./gradlew assembleRelease"
+  "before_cache": [
+    "rm -f $HOME/.gradle/caches/modules-2/modules-2.lock"
+  ],
+  "cache": {
+    "directories": [
+      "$HOME/.m2",
+      "$HOME/.gradle",
+      "$HOME/.gradle/caches/",
+      "$HOME/.gradle/wrapper/"
+    ]
   },
+  "before_script": [
+    "chmod +x gradlew"
+  ],
   "before_deploy":{
     "mv app/build/outputs/apk/app-debug.apk app/build/outputs/apk/ColetCoffeeCashlessTrade_AS_Pro.apk"
     },
