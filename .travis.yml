@@ -30,7 +30,7 @@
   before_deploy:{
     "mv app/build/outputs/apk/app-release.apk app/build/outputs/apk/ColetCoffeeCashlessTrade_AS_Pro.apk"
     },
-    "deploy":{
+  "deploy":{
       "provider": "releases",
       "api_key":{
         "secure": "${GITHUB_TOKEN}",
