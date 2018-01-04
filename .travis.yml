@@ -30,7 +30,7 @@
     "deploy":{
       "provider": "releases",
       "api_key":{
-        "secure": ${GITHUB_TOKEN}
+        "secure": "${GITHUB_TOKEN}",
         },
       "file": "app/build/outputs/apk/app-release.apk",
       "skip_cleanup": "true",
