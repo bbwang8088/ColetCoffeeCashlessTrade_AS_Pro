@@ -35,7 +35,7 @@
       "api_key":{
         "secure": "${GITHUB_TOKEN}",
         },
-      "file": "app/build/outputs/apk/app-debug.apk",
+    "file": "app/build/outputs/apk/app-debug.apk",
       "skip_cleanup": "true",
       "on":{
         "repo": "bbwang8088/ColetCoffeeCashlessTrade_AS_Pro",
