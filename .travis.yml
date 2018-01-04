@@ -32,7 +32,7 @@
       "api_key":{
         "secure": "${GITHUB_TOKEN}",
         },
-      "file": "app/build/outputs/apk/app-release.apk",
+      "file": "app/travisci_build/app-travisci-release.apk",
       "skip_cleanup": "true",
       "on":{
         "repo": "bbwang8088/ColetCoffeeCashlessTrade_AS_Pro",
